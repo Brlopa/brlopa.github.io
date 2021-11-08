@@ -1,13 +1,64 @@
-<h1>
-    World Flight
-</h1>
-<h2>
-    World flight is an anual flight event, flying around the world raising money for charity
-</h2>
-<h3><a href="https://www.simbrief.com/system/briefing.php">Current Flight</a></h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="/images/appleicon.png">
 
-<h2>Flight Plan</h2>
-<img src="WorldFlight_2021_Map.png">
+
+    <title>Planning Portal</title>
+    <base href="/" />
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/default-base.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+    <script src="_content/MatBlazor/dist/matBlazor.js"></script>
+    <link href="_content/MatBlazor/dist/matBlazor.css" rel="stylesheet" />
+    <script src="_content/BlazorLeaflet/leafletBlazorInterops.js"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+
+<script type="text/javascript">
+	
+    var appInsights=window.appInsights||function(a){
+        function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+    }({
+        sdkExtension: 'ar',
+		endpointUrl: "https://uksouth-0.in.applicationinsights.azure.com//v2/track",
+instrumentationKey: 'ce633838-c8aa-44a2-a1ff-b74b1bc44284'
+    });
+
+    window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+	
+    </script></head>
+<body>
+    <h1>
+        World Flight
+    </h1>
+    <h2>
+        World flight is an anual flight event, flying around the world raising money for charity
+    </h2>
+    <h3><a href="https://www.simbrief.com/system/briefing.php">Current Flight</a></h3>
+    
+    <h2>Flight Plan</h2>
+    <img src="WorldFlight_2021_Map.png">
+    
+
+    <app>
+        <!--Blazor:{"sequence":0,"type":"server","prerenderId":"75a7fee593324515bfa0ac7a2793b524","descriptor":"CfDJ8AwfBmDiw2pKqwkFbTCdaWJBJ0xamWySvpJQhD7nvyWUSxgyskLiQEH8vyny8ZQqTbRD5\u002B9C//0U\u002B/m0XWxUDtUtjj1dbW9oiBHRW5NFcm2U2SnBLiI3gRRqv3eSqXnzuIY4y395h4d/daubdzt\u002BPLw3MRWCuTPXQsC8dgermw2bf2pUuoE9xRTDYzMDigIIxvM1Xstt8TXDokwzTJAYHoWf\u002BjjZUFfuwOVGMQplKW0FRg3B0fWWhyhY6fK5c2yF/kKNs/jQfv8RjiNaSi0TsOEHQc/VlN0Yka0qKNyjvPttvP/TK0W4W0dB\u002B23BLsd3449\u002BMT\u002B4SsO4FcTHB5ehdDs7/YQlnR\u002BcO7nX\u002BOBdNVkM"}-->
+    
+            <div class="sidebar">
+    <div class="top-row pl-4 navbar navbar-dark">
+    <color="#ffffff"><h5>Simfest Information</h5>
+    <button class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
 
 
 <div class="collapse">
@@ -51,6 +102,63 @@
 </div>
 
 </div>
+
+
+
+    <div class="content px-4">
+        <style>
+    body {
+        background: url("../images/wallpaper.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<div>
+    <div class="demo-mat-card mat-card mdc-card" style="" width="90%" Id="matBlazor_id_82117e6c-1966-4a0c-9ec0-c9e4072adc09">
+         
+        <div class="mdc-card__primary-action" style="" width="90%" Id="matBlazor_id_8c6c6002-54b5-4bba-828c-8f9c97c588b2">
+         
+
+            <div class="demo-mat-card-content" width="90%">
+                <h6 class="demo-mat-card-clean-margin mat mat-h6" style="" Id="matBlazor_id_ab367654-6a35-4999-8bcd-16425892c689">
+                    <p>
+                        &nbsp;&nbsp;<b>BAW       2114<br><br></b><b>Dept: </b>KJFK New York  2135z &#xA0;&#xA0; <b>Dest: </b>KJAX Jacksonville 2355z
+                        <br><br>
+                        <b>Capt:</b> CAPAZ  &#xA0;&#xA0; <b>FO:</b> Michael Bensom      
+                        <br><br>
+                        <b>ZFW:</b> 248.2  &#xA0;&#xA0;<b> MACTOW:</b> 21.0 &#xA0;&#xA0;<b>Tanks:</b> 38062kg &#xA0;&#xA0; <b>PAX:</b> 257 &nbsp;&nbsp;
+
+
+                        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;WAVEY EMJAY J174 ORF J121 CHS ESENT LUNNI1&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br><br>
+                        <img width="450px" src="http://www.simbrief.com/ofp/uads/KJFKKJAX_1636405653_ROUTE.gif" />
+                    </p>
+                </h6>
+
+            </div>
+
+        
+     </div>
+    
+     </div>
+</div>
+    </div>
+        
+<!--Blazor:{"prerenderId":"75a7fee593324515bfa0ac7a2793b524"}-->
+    </app>
+
+    <div id="blazor-error-ui">
+        
+            An error has occurred. This application may no longer respond until reloaded.
+        
+        
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>
 
 
 
